@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 
-// import { MaterialModule } from './material/material.module';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -18,8 +18,8 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-    // MaterialModule
+    BrowserAnimationsModule,
+    MaterialModule
     
   ],
   providers: [],
