@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { dateInputsHaveChanged } from '@angular/material/datepicker/datepicker-input-base';
+// import { dateInputsHaveChanged } from '@angular/material/datepicker/datepicker-input-base';
 
-import { HomeSectionsService } from 'src/app/services/home-sections.service';
+import { HomeContService } from 'src/app/services/home-cont.service';
 
 @Component({
   selector: 'app-home',
@@ -11,13 +11,19 @@ import { HomeSectionsService } from 'src/app/services/home-sections.service';
 export class HomeComponent implements OnInit {
 
   
-  homeSections;
+  homeSections:any = [];
 
-  constructor(service: HomeSectionsService) { 
-    this.homeSections = service.getHomeSections(); 
-    // console.log ( this.homeSections);
-  }
+  constructor(private service: HomeContService) {   }
+  
   ngOnInit(): void {
+    this.service.getAll() 
+      .subscribe( 
+        response =>{
+          this.homeSections = response;
+        },
+        (err) => { 
+          console.log('Unable to get the data.', err );
+        });
   }
 
 }
