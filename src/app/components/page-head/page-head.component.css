@@ -1,0 +1,39 @@
+.page-banner{
+    top:-12px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+.banner-title{
+  /* padding-bottom: 56px;
+  padding-top: 112px;
+  padding-left: 48px;
+  padding-right: 48px;
+  position: absolute;
+  top: calc(-90px);
+  height: calc(100% + 90px); */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.banner-title span{
+  letter-spacing: 2px;
+  line-height: 1;
+  text-align: center;
+  font-size: 37.5pt;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #151515;
+}

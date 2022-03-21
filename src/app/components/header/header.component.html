@@ -1,11 +1,22 @@
 <p>
   <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
-    </button>
-    <span><img class="logo" src="assets/images/Logo.gif" ></span>
+    </button> -->
+    <span routerLink='' style="cursor: pointer;"><img class="logo" src="assets/images/Logo.gif" ></span>
     
-    <span>Blessing 2 World</span>
+    <span routerLink='' style="cursor: pointer;">Blessing 2 World</span>
+    <span class="topnav-spacer"></span>
+
+    <a mat-button routerLinkActive="mat-raised-button" [routerLinkActiveOptions]="{exact:
+      true}" routerLink=''>Home</a>
+    <a mat-button routerLinkActive="mat-raised-button" routerLink="schedule">Schedule</a>
+    <a mat-button routerLinkActive="mat-raised-button" routerLink="resources">Resources</a>
+    <a mat-button routerLinkActive="mat-raised-button" routerLink="quicklinks">Quick Links</a>
+    <a mat-button routerLinkActive="mat-raised-button" routerLink="contactus">Contact Us</a>
+    <a mat-button routerLinkActive="mat-raised-button" routerLink="about">About</a>
+
+
 
     <!-- <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">

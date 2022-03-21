@@ -1,3 +1,6 @@
+.topnav-spacer{
+    flex:1 1 auto;
+}
 .logo{
     width:45px;
     vertical-align: middle;
